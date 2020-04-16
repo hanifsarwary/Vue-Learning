@@ -8,9 +8,20 @@
 			<div class="product-image">
 				<img v-bind:src="image">
 			</div>
-
+			<h1>{{product}}</h1>
+			<div v-if="sotck_size === 100">
+				<h3> In Stock</h3>
+			</div>
+			<div v-else-if="stock_size === 10">
+				<h3>
+					Bla bla bla it's just conditional rendering in vue
+				</h3>
+			</div>
+			<div v-else>
+				out of stock
+			</div>
 		</div>
-		<h1>{{product}}</h1>
+
 	</div>
 </h1>
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>

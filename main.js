@@ -4,6 +4,7 @@ var app = new Vue(
         data: {
             product: 'socks',
             image: '/home/hanif/Downloads/nfdkbfdb.png',
+            stock_size: 10
         }
     }
 )
